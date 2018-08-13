@@ -1,0 +1,101 @@
+
+/* Global
+   ============================================================================= */
+
+$primary-color:#f15c22;
+$primary-color-light: #fdaf93;
+$primary-color-accent: #fecebd;
+$secondary-color:#001c3f;
+$secondary-color-light: #8d9eb6;
+$secondary-color-accent: #b9c4d4;
+$accent-color:#ffffff;
+$accent-color-dark: #000000;
+
+body{
+
+    overflow-x: hidden;
+}  
+
+.icon--hover{
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+svg:hover .icon--hover{
+
+    fill: $primary-color;
+}
+
+.header--light-color{
+
+    color: $accent-color;
+}
+
+@mixin background {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin flex-row-center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//Media querys
+
+@mixin small-mobile() {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin small-computer() {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin medium-computer() {
+    @media only screen and (max-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin large-computer() {
+    @media only screen and (max-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin widescreen-computer() {
+    @media only screen and (min-width: 1920px) {
+        @content;
+    }
+}
+
+
