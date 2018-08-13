@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
-    "build-site": "gulp build",
+    "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
     "start-preview": "gulp server-preview",
