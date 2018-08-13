@@ -1,12 +1,11 @@
-import { TweenLite, Power1, TweenMax, TimelineMax, TimelineLite } from 'gsap';
-import Swiper from 'swiper';
 
-const gsap = require('gsap');
-  require('animation.gsap');
-  require('debug.addIndicators');
-const $ = require('jquery');
-const ScrollMagic = require('ScrollMagic');
-const mapsapi = require( 'google-maps-api' )( 'AIzaSyBMrBP0irD3XSwAUHbK5t8Mckz6KD7FWlg' );
+
+import gsap from'gsap';
+import { TweenLite, Power1, TweenMax, TimelineMax, TimelineLite } from 'gsap';
+import $ from ('jquery');
+import ScrollMagic from ('ScrollMagic');
+import mapsapi from ('google-maps-api')('AIzaSyBMrBP0irD3XSwAUHbK5t8Mckz6KD7FWlg');
+import Swiper from 'swiper';
 
 
 /* Sticky Menu
