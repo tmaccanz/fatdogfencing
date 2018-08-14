@@ -42,13 +42,14 @@ $(window).scroll(function () {
  ============================================================================= */
 
  $(function () {
-    $('.nav__link-container a, .landing__down-arrow, .footer__arrow-container[href*="#"]:not([href="#"])').click(function () {
+    let stickyHeight = (0, 7 * window.innerHeight/100);
+    $('.nav__link-container a, landing__text-section a, .landing__down-arrow, .footer__arrow-container[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html, body').animate({
-                    scrollTop: target.offset().top - 68
+                    scrollTop: target.offset().top - stickyHeight
                 }, 1000);
                 return false;
             }

@@ -62,7 +62,7 @@ nav{
 
     @include medium-computer{
 
-        margin-left: 2%;
+        margin-left: 4%;
     }
 
     @include small-computer{
@@ -186,10 +186,11 @@ nav{
 
 .nav__menu-mobile-icon{
 
-    visibility: hidden;
+    display: none;
 
     @include small-computer{
 
+        display: block;
         visibility: visible;
         width: 1.5rem;
         height: 1.5rem;
