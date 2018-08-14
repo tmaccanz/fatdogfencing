@@ -36,11 +36,6 @@ nav{
     margin-right: auto;
     margin-left: 20px;
 
-    @include small-computer{
-
-        padding: 5px 0 5px 0;
-    }
-
     @include mobile{
 
         margin-left: 10px;
@@ -80,7 +75,7 @@ nav{
 
     @include medium-computer{
 
-        margin: 0 1rem 0 1rem;
+        margin: 0 0.8rem 0 0.8rem;
     }
 }
         
@@ -130,7 +125,7 @@ nav{
 
     @include medium-computer{
 
-        margin-right: 1rem;
+        margin-right: 0.8rem;
     }
 }
 
@@ -277,7 +272,7 @@ nav{
 
 .landing__text-section{
 
-    width: 40%;
+    width: 50%;
     height: auto;
     @include flex-column-center;
     margin: auto;

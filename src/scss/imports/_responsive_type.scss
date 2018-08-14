@@ -96,7 +96,8 @@ $mod_2: 1.4; // desktop
 
 h1{  
 
-  $mod_2: 1.6;    
+  $mod_2: 1.6;
+  $mod_1: 1.3;    
   font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
   @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);      
 }
