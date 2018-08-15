@@ -1,7 +1,7 @@
 baseurl = "/"
-languageCode = "en-us"
+languageCode = "en-nz"
 languageLang = "en"
-title = "My new site"
+title = "Fatdog Fencing"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 

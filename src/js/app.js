@@ -43,7 +43,7 @@ $(window).scroll(function () {
 
  $(function () {
     let stickyHeight = (0, 7 * window.innerHeight/100);
-    $('.nav__link-container a, .landing__text-section a, .landing__down-arrow, .footer__arrow-container[href*="#"]:not([href="#"])').click(function () {
+    $('.nav__link-container a, .about__contact, .landing__text-section a, .landing__down-arrow, .footer__arrow-container[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -239,9 +239,11 @@ let mySwiper = new Swiper('.swiper-container', {
     e.preventDefault();
    }); 
  
-  
-  
-  
+   $(".quote-dropdown").click(function(e){
+
+        e.preventDefault();
+  })
+
   
    
   /* Map api

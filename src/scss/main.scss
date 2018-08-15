@@ -246,11 +246,6 @@ nav{
     background-color: $primary-color;
 }
 
-.mobile-menu__link{
-
-
-    
-}
 
 //Landing
 
@@ -301,6 +296,8 @@ nav{
 
 .landing__down-arrow{
 
+    width: auto;
+    height: auto;
     animation-name: arrow-animation;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
@@ -346,7 +343,11 @@ nav{
     width: 100%;
     height: 70vh;
     display: flex;
-    min-width: 100%;
+
+    @include medium-computer{
+
+        height: 80vh;
+    }
 
     @include small-computer{
 
@@ -364,12 +365,12 @@ nav{
 
     @include mobile{
 
-        height: 140vh;
+        height: 125vh;
     }
 
     @include small-mobile{
 
-        height: 160vh;
+        height: 170vh;
     }
 }
 
@@ -498,6 +499,11 @@ nav{
     
         padding: 5vh 0 5vh 0;
         height: 240vh;
+    }
+
+    @include small-mobile{
+
+        height: 270vh;
     }
 
 }
@@ -635,8 +641,14 @@ nav{
 
     @include mobile{
 
-        height: 130vh;
+        height: 120vh;
     }
+
+    @include small-mobile{
+
+        height: 140vh;
+    }
+
 }
 
 .service__header{
@@ -794,7 +806,7 @@ nav{
 
     @include mobile{
 
-        height: 200vh;
+        height: 250vh;
     }
     
     @include small-mobile{
@@ -1044,6 +1056,11 @@ nav{
     height: 1.5rem;
     position: relative;
     top: 15px;
+}
+
+.fence-type-header{
+
+    margin: 0;
 }
 
 .accent{
