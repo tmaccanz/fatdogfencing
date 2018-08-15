@@ -152,6 +152,11 @@
     margin-top: -22px;
     z-index: 10;
     cursor: pointer;
+
+    @include mobile{
+
+      top: 25%;
+    }
   }
   .swiper-button-prev.swiper-button-disabled,
   .swiper-button-next.swiper-button-disabled {
@@ -164,12 +169,22 @@
   
     left: 15px;
     right: auto;
+
+    @include mobile{
+
+      left: 5px;
+    }
   }
   .swiper-button-next,
   .swiper-container-rtl .swiper-button-prev {
   
     right: 15px;
     left: auto;
+
+    @include mobile{
+
+      right: 5px;
+    }
   }
 
   .swiper-button-lock {

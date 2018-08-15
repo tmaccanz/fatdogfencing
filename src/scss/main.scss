@@ -346,6 +346,13 @@ nav{
     width: 100%;
     height: 70vh;
     display: flex;
+    min-width: 100%;
+
+    @include small-computer{
+
+        width: 100%;
+        height: 80vh;
+    }
 
     @include tablet{
 
@@ -353,6 +360,16 @@ nav{
         height: 100vh;
         display: flex;
         flex-direction: column;
+    }
+
+    @include mobile{
+
+        height: 140vh;
+    }
+
+    @include small-mobile{
+
+        height: 160vh;
     }
 }
 
@@ -369,7 +386,18 @@ nav{
     @include tablet{
 
         width: 100%;
-        border: 15px solid $primary-color-light; 
+        border: 15px solid $primary-color-light;
+        border-bottom: 0px; 
+    }
+
+    @include mobile{
+
+        height: 45%
+    }
+
+    @include small-mobile{
+
+        height: 40%;
     }
 }
 
@@ -383,6 +411,16 @@ nav{
     @include tablet{
 
         width: 100%;
+    }
+
+    @include mobile{
+
+        height: 55%
+    }
+
+    @include small-mobile{
+
+        height: 60%;
     }
 }   
 
@@ -444,7 +482,24 @@ nav{
     width: 100%;
     height: 93vh;
     @include flex-column-center;
-    padding: 8vh 0 8vh 0; 
+    padding: 8vh 0 8vh 0;
+    
+    @include medium-computer{
+
+        padding: 7vh 0 7vh 0;
+    }
+    
+    @include tablet{
+    
+        padding: 6vh 0 6vh 0;
+    }
+    
+    @include mobile{
+    
+        padding: 5vh 0 5vh 0;
+        height: 240vh;
+    }
+
 }
 
 .testimonial-container{
@@ -455,6 +510,32 @@ nav{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2.5rem;
+
+   @include medium-computer{
+
+    width: 85%;
+    height: 95%;
+   }
+
+   @include tablet{
+
+    width: 90%;
+    height: 80%;
+   }
+
+   @include mobile{
+
+    width: 70%;
+    height: 100%;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+   }
+
+   @include small-mobile{
+
+    width: 90%;
+   }
+
 }
 
 .testimonial-container__card{
@@ -541,6 +622,21 @@ nav{
     width: 100%;
     height: 70vh;
     @include flex-column-center;
+
+    @include small-computer{
+
+        height: 60vh;
+    }
+
+    @include tablet{
+
+        height: 50vh;
+    }
+
+    @include mobile{
+
+        height: 130vh;
+    }
 }
 
 .service__header{
@@ -560,6 +656,13 @@ nav{
 .swiper-slide{
 
     display: flex;
+
+    @include mobile{
+
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 
 .service-text{
@@ -567,7 +670,13 @@ nav{
     width: 50%;
     height: 100%;
     @include flex-column-center;
-    
+
+    @include mobile{
+
+        width: 100%;
+        height: 50%;
+        
+    }
 }
 
 .service-text__container{
@@ -578,6 +687,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 }
 
 .service-text__header{
@@ -598,6 +708,14 @@ nav{
     box-sizing: border-box;
     border: 15px solid $primary-color-light; 
     border-left: 0px;
+
+    @include mobile{
+
+        width: 100%;
+        height: 50%;
+        border: 15px solid $primary-color-light;
+        border-top: 0px; 
+    }
 }
 
 .service-image__media{
@@ -657,7 +775,34 @@ nav{
     width: 100%;
     height: 93vh;
     @include flex-row-center;
-    padding: 8vh 0 8vh 0; 
+    padding: 8vh 0 8vh 0;
+
+    @include medium-computer{
+
+        padding: 7vh 0 7vh 0;
+    }
+
+    @include small-computer{
+
+        height: 130vh;
+    }
+    
+    @include tablet{
+    
+        padding: 6vh 0 6vh 0;
+    }
+
+    @include mobile{
+
+        height: 200vh;
+    }
+    
+    @include small-mobile{
+    
+        padding: 0;
+        height: 400vh;
+    }
+
 }
 
 .gallery-container{
@@ -668,6 +813,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .gallery__image-grid{
@@ -677,7 +823,26 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 2.5em; 
+    grid-gap: 2.5em;
+
+    
+    @include small-computer{
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    @include mobile{
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    @include small-mobile{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+    }
 }
   
 .image-grid__card{
@@ -689,6 +854,7 @@ nav{
     cursor: pointer;
     transition: ease 0.3s;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+
 }
 
 .card__img{
@@ -697,6 +863,7 @@ nav{
     height: 100%;
     position: absolute;
     z-index: 1;
+    
 }
 
 .gallery-modal__img{
@@ -727,6 +894,36 @@ nav{
     box-sizing: border-box;
     border: 15px solid $primary-color-light;
     box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+
+    @include medium-computer{
+
+        width: 700px;
+        height: 400px;
+    }
+
+    @include small-computer{
+
+        width: 600px;
+        height: 350px;
+    }
+
+    @include tablet{
+
+        width: 500px;
+        height: 300px;
+    }
+
+    @include mobile{
+
+        width: 400px;
+        height: 300px;
+    }
+
+    @include small-mobile{
+
+        width: 300px;
+        height: 300px;
+    }
 }
   
 .gallery__modal-overlay{
@@ -808,7 +1005,7 @@ nav{
 
 .quote-dropdown__item-type{
 
-    width: 600px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -819,6 +1016,26 @@ nav{
     border: 5px solid $accent-color-dark;
     padding: 15px;
     z-index: 5000;
+
+    @include small-computer{
+
+        width: 400px;
+    }
+
+    @include tablet{
+
+        width: 350px;
+    }
+
+    @include mobile{
+
+        width: 300px;
+    }
+
+    @include small-mobile{
+
+        width: 220px;
+    }
 }
 
 .quote-dropdown__arrow{
@@ -857,7 +1074,7 @@ nav{
 
 .quote-dropdown__item{
     
-    width: 600px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -867,6 +1084,26 @@ nav{
     border-top: none;
     padding: 15px;
     z-index: 5000;
+
+    @include small-computer{
+
+        width: 400px;
+    }
+
+    @include tablet{
+
+        width: 350px;
+    }
+
+    @include mobile{
+
+        width: 300px;
+    }
+
+    @include small-mobile{
+
+        width: 220px;
+    }
 }
 
 .quote-dropdown__item:hover{
@@ -936,6 +1173,11 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     margin-top: 20px;
     box-sizing: border-box;
     border: 5px solid $accent-color-dark;
+
+    @include mobile{
+
+        width: 70px;
+    }
 }
 
 [type='range']{
@@ -1061,6 +1303,13 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     width: 100%;
     height: 93vh;
     display: flex;
+
+    @include mobile{
+
+        display: flex;
+        flex-direction: column-reverse;
+        height: 300%;
+    }
 }
 
 //map
@@ -1073,6 +1322,12 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    @include mobile{
+
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #map{
@@ -1099,6 +1354,12 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include mobile{
+
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .contact-facebook-container{
