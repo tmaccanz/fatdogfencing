@@ -1,0 +1,162 @@
+/* Services
+   ============================================================================= */
+
+.service{
+
+    width: 100%;
+    height: 70vh;
+    @include flex-column-center;
+
+    @include small-computer{
+
+        height: 60vh;
+    }
+
+    @include tablet{
+
+        height: 50vh;
+    }
+
+    @include mobile{
+
+        height: 120vh;
+    }
+
+    @include small-mobile{
+
+        height: 140vh;
+    }
+
+}
+
+.service__header{
+
+    position: relative;
+    bottom: 3.5rem;
+    margin: 0;
+}
+
+.service-container{
+
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color-light;
+}
+
+.swiper-slide{
+
+    display: flex;
+
+    @include mobile{
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.service-text{
+
+    width: 50%;
+    height: 100%;
+    @include flex-column-center;
+
+    @include mobile{
+
+        width: 100%;
+        height: 50%;
+        
+    }
+}
+
+.service-text__container{
+
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.service-text__header-container{
+
+    margin-bottom: 1rem;
+}
+
+.service-text__header{
+
+    margin: 0;
+}
+
+.service-text__header--sub{
+
+    border-bottom: 5px solid $primary-color;
+    padding-bottom: 10px;
+}
+
+.service-image{
+
+    width: 50%;
+    height: 100%;
+    @include flex-column-center;
+    box-sizing: border-box;
+    border: 15px solid $primary-color-light; 
+    border-left: 0px;
+
+    @include mobile{
+
+        width: 100%;
+        height: 50%;
+        border: 15px solid $primary-color-light;
+        border-top: 0px; 
+    }
+}
+
+.service-image__media{
+
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next{
+
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.swiper-button-prev{
+
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.timber-image{
+
+    background-image: url(../images/Gallery-9.jpg);
+    @include background;
+}
+
+.coloursteel-image{
+
+    background-image: url(../images/colorbond.jpg);
+    @include background;
+}
+
+.decking-image{
+
+    background-image: url(../images/timber_deck.jpg);
+    @include background;
+}
+
+.aluminium-image{
+
+    background-image: url(../images/pool_fencing.jpg);
+    @include background;
+}
+
+.retaining-image{
+
+    background-image: url(../images/timber_retaining_wall.jpg);
+    @include background;
+}

@@ -1,0 +1,136 @@
+/* Contact
+   ============================================================================= */
+
+.contact{
+
+    width: 100%;
+    height: 93vh;
+    display: flex;
+
+    @include mobile{
+
+        display: flex;
+        flex-direction: column-reverse;
+        height: 300%;
+    }
+}
+
+//map
+
+.contact-map{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include mobile{
+
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#map{
+
+    width: 100%;
+    height: 100%;
+}
+
+.contact-map__header{
+
+    position: absolute;
+    z-index: 1001;
+    text-align: center;
+    margin-top: 4.5rem;
+}
+
+//form
+
+.contact-form__container{
+
+    width: 50%;
+    height: 100%;
+    background-color: #fdaf93;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile{
+
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contact-facebook-container{
+
+    width: auto;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;  
+}
+
+.contact-facebook{
+
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0 1rem 2rem 0;
+}
+
+.contact-form{
+
+    width: 65%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.feedback-input-hidden{
+
+    display: none;
+}
+
+.feedback-input{
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid $accent-color-dark;
+    transition: all ease 0.3s;
+    margin-bottom: 3rem;
+    padding-bottom: 10px;
+    outline: 0;
+}
+
+.feedback-input:focus{
+
+    border-color: $primary-color;
+}
+
+.submit-form{
+
+    display: none;
+}
+
+.send-icon{
+
+    width: 3rem;
+    height: 3rem;
+    pointer-events: bounding-box;
+    cursor: pointer;
+}
+
+.contact-form__send{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
