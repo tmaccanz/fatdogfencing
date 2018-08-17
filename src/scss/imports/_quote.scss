@@ -8,7 +8,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    
+    @include medium-computer{
+
+        height: 120vh;
+    }
 }
 
 .quote-container{
