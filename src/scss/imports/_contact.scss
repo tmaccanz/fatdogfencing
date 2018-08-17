@@ -7,11 +7,16 @@
     height: 93vh;
     display: flex;
 
+    @include small-computer{
+
+        height: 130vh;
+    }
+
     @include mobile{
 
         display: flex;
         flex-direction: column-reverse;
-        height: 300%;
+        height: 250vh;
     }
 }
 

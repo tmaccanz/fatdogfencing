@@ -97,10 +97,11 @@
     justify-content: center;
     align-items: flex-start;
 
-    @include tablet{
+    @include small-computer{
 
-        width: 70%;
+        width: 80%
     }
+
 }
 
 .text-section-container__text-header-container{
@@ -117,13 +118,6 @@
 
     border-bottom: 5px solid $primary-color;
     padding-bottom: 10px;
-}
-
-.text-header-container__divider{
-
-    margin-top: 0.4rem;
-    width: 500px;
-    height: auto;
 }
 
 .about__contact{

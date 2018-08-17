@@ -11,6 +11,7 @@
     @include medium-computer{
 
         padding: 7vh 0 7vh 0;
+        height: 120vh;
     }
     
     @include tablet{
@@ -21,7 +22,7 @@
     @include mobile{
     
         padding: 5vh 0 5vh 0;
-        height: 240vh;
+        height: 200vh;
     }
 
     @include small-mobile{
