@@ -17,6 +17,8 @@ import imagemin from "gulp-imagemin";
 import imageminJPG from "imagemin-jpeg-recompress"
 import imageminPngquant from "imagemin-pngquant";
 import del from "del";
+import cache from 'gulp-cache';
+
 
 const browserSync = BrowserSync.create();
 
@@ -29,7 +31,7 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["scss", "js", "fonts", "min"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build", ["scss", "js", "fonts", "min", "clear"], (cb) => buildSite(cb, [], "production"));
 gulp.task("build-preview", ["scss", "js", "fonts", "min"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 // Compile SCSS
@@ -65,12 +67,13 @@ gulp.task("js", (cb) => {
 
 gulp.task('min', () =>
 	gulp.src('site/static/images/*')
-		.pipe(imagemin(
+		.pipe(cache(imagemin(
       [imageminPngquant(), imageminJPG()],
       {verbose: true}
-    ))
+    )))
 		.pipe(gulp.dest('dist/images'))
 );
+
 
 //Clean folders/files
 
@@ -117,3 +120,7 @@ function buildSite(cb, options, environment = "development") {
     }
   });
 }
+
+gulp.task('clear', () =>
+    cache.clearAll()
+);
