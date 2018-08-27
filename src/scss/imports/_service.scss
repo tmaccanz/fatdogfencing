@@ -19,7 +19,7 @@
 
     @include mobile{
 
-        height: 120vh;
+        height: 100vh;
     }
 
     @include small-mobile{
@@ -40,7 +40,7 @@
 
     width: 100%;
     height: 100%;
-    background-color: $primary-color-light;
+    background-color: $primary-color;
 }
 
 .swiper-slide{
@@ -96,7 +96,7 @@
 
 .service-text__header--sub{
 
-    border-bottom: 5px solid $primary-color;
+    border-bottom: 5px solid $secondary-color;
     padding-bottom: 10px;
 }
 
@@ -106,14 +106,14 @@
     height: 100%;
     @include flex-column-center;
     box-sizing: border-box;
-    border: 15px solid $primary-color-light; 
+    border: 15px solid $primary-color; 
     border-left: 0px;
 
     @include mobile{
 
         width: 100%;
         height: 50%;
-        border: 15px solid $primary-color-light;
+        border: 15px solid $primary-color;
         border-top: 0px; 
     }
 }
@@ -138,7 +138,7 @@
 
 .timber-image{
 
-    background-image: url(../images/Gallery-9.jpg);
+    background-image: url(../images/timber_fence_retaining.jpg);
     @include background;
 }
 
@@ -162,6 +162,6 @@
 
 .retaining-image{
 
-    background-image: url(../images/timber_retaining_wall.jpg);
+    background-image: url(../images/timber_retaining.jpg);
     @include background;
 }

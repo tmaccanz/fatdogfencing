@@ -28,7 +28,7 @@
 
     @include mobile{
 
-        height: 125vh;
+        height: 115vh;
     }
 
     @include small-mobile{
@@ -44,13 +44,13 @@
     background-image: url(../images/about_background.jpg);
     @include background;
     box-sizing: border-box;
-    border: 15px solid $primary-color-light; 
+    border: 15px solid $primary-color; 
     border-right: 0px;
 
     @include tablet{
 
         width: 100%;
-        border: 15px solid $primary-color-light;
+        border: 15px solid $primary-color;
         border-bottom: 0px; 
     }
 
@@ -70,7 +70,7 @@
     width: 50%;
     height: 100%;
     @include flex-column-center;
-    background-color: $primary-color-light;
+    background-color: $primary-color;
     
     @include tablet{
 
@@ -116,7 +116,7 @@
 
 .text-header-container__header--sub{
 
-    border-bottom: 5px solid $primary-color;
+    border-bottom: 5px solid $secondary-color;
     padding-bottom: 10px;
 }
 

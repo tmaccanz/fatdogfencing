@@ -1,0 +1,112 @@
+
+
+
+
+.testimonial{
+
+    width: 100%;
+    height: 93vh;
+    @include flex-column-center;
+    padding: 8vh 0 8vh 0;
+    
+    @include medium-computer{
+
+        padding: 7vh 0 7vh 0;
+        height: 120vh;
+    }
+    
+    @include tablet{
+    
+        padding: 6vh 0 6vh 0;
+    }
+    
+    @include mobile{
+    
+        padding: 5vh 0 5vh 0;
+        height: 160vh;
+    }
+
+    @include small-mobile{
+
+        height: 270vh;
+    }
+
+}
+
+@supports (display: grid) {
+
+    .testimonial-container{
+        
+        width: 70%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2.5rem;
+
+    @include medium-computer{
+
+            width: 85%;
+            height: 95%;
+    }
+
+    @include tablet{
+
+            width: 90%;
+            height: 80%;
+    }
+
+    @include mobile{
+
+            width: 70%;
+            height: 100%;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    @include small-mobile{
+
+            width: 90%;
+    }
+
+  }
+
+}
+
+@supports not (display: grid) {
+
+    .testimonial-container{
+        
+        width: 70%;
+        height: 80%;
+        display: flex;
+        flex-flow: row wrap;
+
+    @include medium-computer{
+
+            width: 85%;
+            height: 95%;
+    }
+
+    @include tablet{
+
+            width: 90%;
+            height: 80%;
+    }
+
+    @include mobile{
+
+            width: 70%;
+            height: 100%;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    @include small-mobile{
+
+            width: 90%;
+    }
+
+  }
+
+}

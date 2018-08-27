@@ -11,6 +11,7 @@ $secondary-color-accent: #b9c4d4;
 $accent-color:#ffffff;
 $accent-color-dark: #000000;
 
+
 body{
 
     overflow-x: hidden;
@@ -25,6 +26,17 @@ body{
 svg:hover .icon--hover{
 
     fill: $primary-color;
+}
+
+.icon--hover-secondary{
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+svg:hover .icon--hover-secondary{
+
+    fill: $secondary-color;
 }
 
 .header--light-color{
