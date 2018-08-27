@@ -216,7 +216,8 @@ let mySwiper = new Swiper('.swiper-container', {
 
     var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
     
-    $(this).css('background-image', '-webkit-gradient(linear, left top, right top, ' + 'color-stop(' + val + ', #6BA543), ' + 'color-stop(' + val + ', #000)'+ ')');
+    $(this).css('background-image', '-webkit-gradient(linear, left top, right top, ' + 'color-stop(' + val + ', #6BA543), ' + 'color-stop(' + val + ', #000)'+ ')', 
+                                    '-moz-gradient(linear, left top, right top, ' + 'color-stop(' + val + ', #6BA543), ' + 'color-stop(' + val + ', #000)'+ ')' );
 
   });
   

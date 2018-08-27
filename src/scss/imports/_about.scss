@@ -7,11 +7,6 @@
     height: 70vh;
     display: flex;
 
-    @include medium-computer{
-
-        height: 80vh;
-    }
-
     @include small-computer{
 
         width: 100%;
@@ -28,12 +23,12 @@
 
     @include mobile{
 
-        height: 115vh;
+        height: 105vh;
     }
 
     @include small-mobile{
 
-        height: 170vh;
+        height: 150vh;
     }
 }
 
