@@ -29,12 +29,12 @@
     @include mobile{
     
         padding: 5vh 0 5vh 0;
-        height: 220vh;
+        height: 180vh;
     }
 
     @include small-mobile{
 
-        height: 290vh;
+        height: 330vh;
     }
 
 }
