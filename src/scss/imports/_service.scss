@@ -9,22 +9,22 @@
 
     @include small-computer{
 
-        height: 60vh;
+        height: 50vh;
     }
 
     @include tablet{
 
-        height: 50vh;
+
     }
 
     @include mobile{
 
-        height: 80vh;
+        height: 70vh;
     }
 
     @include small-mobile{
 
-        height: 110vh;
+        height: 100vh;
     }
 
 }
