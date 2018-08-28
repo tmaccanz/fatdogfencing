@@ -135,6 +135,13 @@
         width: 90%;
         height: 80%;
     }
+
+    @include small-mobile{
+
+        width: 90%;
+        height: 80%;
+        max-height: 300px;
+    }
 }
 
 .testimonial-container__card:nth-of-type(1){
