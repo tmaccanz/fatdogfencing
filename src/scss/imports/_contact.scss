@@ -7,9 +7,19 @@
     height: 93vh;
     display: flex;
 
+    @include large-computer{
+
+        height: 83vh;
+    }
+
     @include medium-computer{
 
-        height: 110vh;
+        height: 90vh;
+    }
+
+    @include small-computer{
+
+        height: 103vh;
     }
 
     @include mobile{
@@ -141,6 +151,8 @@
     height: 3rem;
     pointer-events: bounding-box;
     cursor: pointer;
+    min-width: 150px;
+    min-height: 150px;
 }
 
 .contact-form__send{

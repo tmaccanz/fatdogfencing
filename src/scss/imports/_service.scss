@@ -9,7 +9,7 @@
 
     @include small-computer{
 
-        height: 50vh;
+        height: 60vh;
     }
 
     @include tablet{
@@ -128,12 +128,24 @@
 
     width: 2.5rem;
     height: 2.5rem;
+
+    @include small-computer{
+
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 
 .swiper-button-prev{
 
     width: 2.5rem;
     height: 2.5rem;
+
+    @include small-computer{
+
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 
 .timber-image{

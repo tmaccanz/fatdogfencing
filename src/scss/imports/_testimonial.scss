@@ -11,6 +11,12 @@
     @include medium-computer{
 
         padding: 7vh 0 7vh 0;
+        height: 100vh;
+    }
+
+    @include small-computer{
+
+        padding: 7vh 0 7vh 0;
         height: 110vh;
     }
     
@@ -47,7 +53,7 @@
 
     @include medium-computer{
 
-            width: 85%;
+            width: 90%;
             height: 95%;
     }
 
@@ -110,7 +116,13 @@
 
     @include medium-computer{
 
-        height: 85%;
+        width: 90%;
+        height: 90%;
+    }
+
+    @include small-computer{
+
+        height: 75%;
     }
 
     @include tablet{
