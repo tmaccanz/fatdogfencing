@@ -4,37 +4,35 @@
 .testimonial{
 
     width: 100%;
-    height: 93vh;
+    height: 93%;
     @include flex-column-center;
-    padding: 4vh 0 7vh 0;
+    padding: 4% 0 7% 0;
     
     @include medium-computer{
 
-        padding: 7vh 0 7vh 0;
-        height: 100vh;
+        padding: 7% 0 7% 0;
+        height: 100%;
     }
 
     @include small-computer{
 
-        padding: 7vh 0 7vh 0;
-        height: 110vh;
+        height: 110%;
     }
     
     @include tablet{
     
-        padding: 6vh 0 6vh 0;
-        height: 160vh;
+        height: 160%;
     }
     
     @include mobile{
     
-        padding: 5vh 0 5vh 0;
-        height: 120vh;
+        padding: 0;
+        height: 220%;
     }
 
     @include small-mobile{
 
-        height: 330vh;
+        height: 270%;
     }
 
 }
@@ -76,7 +74,8 @@
 
     @include small-mobile{
 
-            width: 90%;
+            width: 100%;
+            height: 90%;
     }
 
   }

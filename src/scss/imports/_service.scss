@@ -4,12 +4,12 @@
 .service{
 
     width: 100%;
-    height: 70vh;
+    height: 70%;
     @include flex-column-center;
 
     @include small-computer{
 
-        height: 60vh;
+        height: 60%;
     }
 
     @include tablet{
@@ -19,12 +19,12 @@
 
     @include mobile{
 
-        height: 70vh;
+        height: 90%;
     }
 
     @include small-mobile{
 
-        height: 115vh;
+        height: 115%;
     }
 
 }

@@ -4,31 +4,24 @@
 .about{
 
     width: 100%;
-    height: 70vh;
+    height: 70%;
     display: flex;
 
     @include small-computer{
 
-        width: 100%;
-        height: 75vh;
+        height: 80%;
     }
 
     @include tablet{
 
-        width: 100%;
-        height: 100vh;
+        height: 135%;
         display: flex;
         flex-direction: column;
     }
 
-    @include mobile{
-
-        height: 50vh;
-    }
-
     @include small-mobile{
 
-        height: 160vh;
+        height: 165%;
     }
 }
 
