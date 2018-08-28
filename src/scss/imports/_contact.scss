@@ -28,6 +28,12 @@
         flex-direction: column-reverse;
         height: 200vh;
     }
+
+    @include small-mobile{
+
+        height: 235vh;
+    
+    }
 }
 
 //map
@@ -151,8 +157,8 @@
     height: 3rem;
     pointer-events: bounding-box;
     cursor: pointer;
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 40px;
+    min-height: 40px;
 }
 
 .contact-form__send{
