@@ -11,11 +11,6 @@ nav{
     position: fixed;
     z-index: 10000;
     transition: all ease-in-out 0.5s;
-
-    @include medium-computer{
-
-        overflow-x: hidden;
-    }
 }
 
 .sticky{
@@ -25,11 +20,6 @@ nav{
     height: 7vh;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background-color: $secondary-color;
-
-    @include medium-computer{
-
-        overflow-x: hidden;
-    }
 }
 
 .nav__logo{
@@ -106,7 +96,7 @@ nav{
 
     transform: scale(1);
 }
-
+/**
 .nav__phone-container{
 
     width: auto;
@@ -118,28 +108,10 @@ nav{
     @include small-computer{
 
         display: none;
-        width: 0;
-        height: 0;
-        margin: 0;
-        overflow-x: hidden;
     }
 
-    @include tablet{
-
-        display: none;
-    }       
-    
-    @include mobile{
-
-        display: none;
-    }
-
-    @include small-mobile{
-
-        display: none;
-    }
 }
-
+**/
 .phone-container__text{
 
     margin: 0 1.5rem 0 0;
@@ -153,22 +125,6 @@ nav{
     }
 
     @include small-computer{
-
-        display: none;
-        margin: 0;
-    }
-
-    @include tablet{
-
-        display: none;
-    }       
-    
-    @include mobile{
-
-        display: none;
-    }
-
-    @include small-mobile{
 
         display: none;
     }
