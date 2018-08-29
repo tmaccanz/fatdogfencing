@@ -29,6 +29,12 @@ nav{
     margin-right: auto;
     margin-left: 20px;
 
+    @include small-computer{
+
+        width: 10%;
+        height: 10%;
+    }
+
     @include mobile{
 
         margin-left: 10px;
