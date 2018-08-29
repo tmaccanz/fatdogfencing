@@ -136,6 +136,11 @@ nav{
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+
+    @include small-computer{
+
+        display: none;
+    }
 }
 
 //Mobile Menu
