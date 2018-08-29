@@ -96,7 +96,7 @@ nav{
 
     transform: scale(1);
 }
-/*
+
 .nav__phone-container{
 
     width: auto;
@@ -111,6 +111,7 @@ nav{
         width: 0;
         height: 0;
         margin: 0;
+        overflow-x: hidden;
     }
 
     @include tablet{
@@ -128,7 +129,7 @@ nav{
         display: none;
     }
 }
-*/
+
 .phone-container__text{
 
     margin: 0 1.5rem 0 0;
