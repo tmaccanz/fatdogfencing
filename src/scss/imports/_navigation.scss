@@ -29,6 +29,11 @@ nav{
     margin-right: auto;
     margin-left: 20px;
 
+    @include small-computer{
+
+        width: 10%;
+    }
+
     @include mobile{
 
         margin-left: 10px;
@@ -108,8 +113,25 @@ nav{
     @include small-computer{
 
         display: none;
+        width: 0;
+        height: 0;
+        margin: 0;
     }
 
+    @include tablet{
+
+        display: none;
+    }       
+    
+    @include mobile{
+
+        display: none;
+    }
+
+    @include small-mobile{
+
+        display: none;
+    }
 }
 
 .phone-container__text{
@@ -125,6 +147,22 @@ nav{
     }
 
     @include small-computer{
+
+        display: none;
+        margin: 0;
+    }
+
+    @include tablet{
+
+        display: none;
+    }       
+    
+    @include mobile{
+
+        display: none;
+    }
+
+    @include small-mobile{
 
         display: none;
     }
@@ -247,9 +285,23 @@ nav{
     border-top: 1px solid $accent-color;
 }
 
+.mobile-menu__container a:nth-of-type(7):hover{
+
+    background: linear-gradient(135deg, #8ABDED ,#6093BF);
+}
+
 .mobile-menu__container a:hover{
 
     background-color: $primary-color;
+}
+
+.mobile-menu__link--number{
+
+    width: 80%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
