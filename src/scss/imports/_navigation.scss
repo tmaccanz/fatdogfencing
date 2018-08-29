@@ -97,7 +97,39 @@ nav{
     transform: scale(1);
 }
 
+.nav__phone-container{
 
+    width: auto;
+    height: 100%;
+    @include flex-row-center;
+    margin-left: auto;
+    margin-right: 20px;
+
+    @include small-computer{
+
+        display: none;
+    }
+}
+
+.phone-container__text{
+
+    margin: 0 1.5rem 0 0;
+    visibility: hidden;
+    transform: translate3d(20%, 0, 0);
+    text-decoration: none;
+
+    @include medium-computer{
+
+        margin-right: 0.8rem;
+    }
+}
+
+.phone-container__text--open{
+
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+}
 
 .phone-container__icon{
 
