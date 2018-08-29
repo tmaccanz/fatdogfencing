@@ -29,12 +29,6 @@ nav{
     margin-right: auto;
     margin-left: 20px;
 
-    @include small-computer{
-
-        width: 10%;
-        height: 10%;
-    }
-
     @include mobile{
 
         margin-left: 10px;
@@ -102,7 +96,7 @@ nav{
 
     transform: scale(1);
 }
-
+/*
 .nav__phone-container{
 
     width: auto;
@@ -134,7 +128,7 @@ nav{
         display: none;
     }
 }
-
+*/
 .phone-container__text{
 
     margin: 0 1.5rem 0 0;
