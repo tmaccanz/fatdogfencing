@@ -139,6 +139,7 @@ nav{
     @include small-mobile{
 
         display: none;
+        visibility: hidden;
     }
 }
 
