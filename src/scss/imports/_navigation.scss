@@ -110,7 +110,7 @@ nav{
         display: none;
     }
 }
-
+/*
 .phone-container__text{
 
     margin: 0 1.5rem 0 0;
@@ -123,7 +123,7 @@ nav{
         margin-right: 0.8rem;
     }
 }
-
+*/
 .phone-container__text--open{
 
     transform: translate3d(0, 0, 0);
@@ -136,11 +136,6 @@ nav{
     width: 2rem;
     height: 2rem;
     cursor: pointer;
-
-    @include small-computer{
-
-        display: none;
-    }
 }
 
 //Mobile Menu
