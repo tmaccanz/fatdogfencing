@@ -4,20 +4,15 @@
    .quote{
 
     width: 100%;
-    height: 93vh;
+    height: 93%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    @include medium-computer{
 
-        height: 100vh;
-    }
+    @include small-computer{
 
-    @include mobile{
-
-        height: 90vh;
+        height: 80%;
     }
 }
 
@@ -70,21 +65,17 @@
     @include small-computer{
 
         width: 400px;
-    }
-
-    @include tablet{
-
-        width: 350px;
+        padding: 10px;
     }
 
     @include mobile{
 
-        width: 300px;
+        width: 350px;
     }
 
     @include small-mobile{
 
-        width: 220px;
+        width: 250px;
     }
 }
 
@@ -94,6 +85,17 @@
     height: 1.5rem;
     position: relative;
     top: 15px;
+
+    @include small-computer{
+
+        top: 5px;
+    }
+
+    @include mobile{
+
+        width: 1rem;
+        height: 1rem;
+    }
 }
 
 .fence-type-header{
@@ -142,21 +144,17 @@
     @include small-computer{
 
         width: 400px;
-    }
-
-    @include tablet{
-
-        width: 350px;
+        padding: 10px;
     }
 
     @include mobile{
 
-        width: 300px;
+        width: 350px;
     }
 
     @include small-mobile{
 
-        width: 220px;
+        width: 250px;
     }
 }
 
@@ -224,15 +222,15 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     width: 100px;
     color: $accent-color-dark;
     text-align: center;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     margin-top: 20px;
     box-sizing: border-box;
     border: 5px solid $accent-color-dark;
 
-    @include mobile{
+    @include small-computer{
 
-        width: 70px;
-        border: 3px solid $accent-color-dark;
+        padding: 5px;
+        width: 80px;
     }
 }
 

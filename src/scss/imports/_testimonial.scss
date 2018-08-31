@@ -6,149 +6,80 @@
     width: 100%;
     height: 93%;
     @include flex-column-center;
-    padding: 4% 0 7% 0;
-    
-    @include medium-computer{
-
-        padding: 7% 0 7% 0;
-        height: 100%;
-    }
+    padding: 4rem 0 4rem 0;
 
     @include small-computer{
 
         height: 110%;
     }
-    
+
     @include tablet{
-    
-        height: 160%;
+
+        height: 180%;
     }
-    
+
     @include mobile{
-    
-        padding: 0;
-        height: 220%;
+
+        height: 200%;
     }
 
     @include small-mobile{
 
-        height: 270%;
+        height: 220%;
     }
-
 }
 
-.testimonial p{
+.testimonial > p{
 
-    padding-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .testimonial-container{
         
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
     align-items: center;
 
-    @include medium-computer{
-
-            width: 90%;
-            height: 95%;
-    }
-
     @include tablet{
 
-            width: 90%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        flex-direction: column;
+
     }
-
-    @include mobile{
-
-            width: 100%;
-            height: 100%;
-    }
-
-    @include small-mobile{
-
-            width: 100%;
-            height: 90%;
-    }
-
   }
-
-.testimonial-container--left{
-
-    width: 50%;
-    height: 100%;
-    @include flex-column-center;
-
-    @include tablet{
-
-        width: 100%;
-        margin: 0;
-    }
-}
-
-.testimonial-container--right{
-
-    width: 50%;
-    height: 100%;
-    @include flex-column-center;
-
-    @include tablet{
-
-        width: 100%;
-        margin: 0;
-    }
-
-}
 
 .testimonial-container__card{
 
-    width: 80%;
-    height: 100%;
+    width: 40%;
+    height: 45%;
     box-sizing: border-box;
     border: 15px solid $secondary-color;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     background-color: $secondary-color-light;
-
-    @include medium-computer{
-
-        width: 90%;
-        height: 90%;
-    }
-
-    @include small-computer{
-
-        height: 75%;
-    }
+    margin: 0 1rem 0 1rem;
 
     @include tablet{
 
         width: 70%;
-    }
-
-    @include mobile{
-
-        width: 90%;
-        height: 80%;
+        height: 20%;
+        margin: 1rem 0 1rem 0;
     }
 
     @include small-mobile{
 
         width: 90%;
-        height: 80%;
-        max-height: 300px;
     }
 }
 
 .testimonial-container__card:nth-of-type(1){
 
-    margin-bottom: 2rem;
+    @include tablet{
+
+        margin-top: 0;
+    }
 }
 
 .card__card-front{

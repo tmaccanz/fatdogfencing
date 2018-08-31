@@ -95,7 +95,7 @@ let mySwiper = new Swiper('.swiper-container', {
    var modalOverlay = document.querySelector('.gallery__modal-overlay');  //target modal overlay,
    var closeButton = document.querySelector('.modal-overlay__close'); //target close button,
    var modalImage = document.querySelector('.gallery-modal__img'); //target modal image,
-   var images = document.querySelectorAll('.image-grid__card');//target images;
+   var images = document.querySelectorAll('.card__img');//target images;
    
    //loop through images
    for(var i = 0; i < images.length; i++){

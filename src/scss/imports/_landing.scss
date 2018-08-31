@@ -23,6 +23,11 @@
     @include flex-column-center;
     margin: auto;
     text-align: center;
+
+    @include medium-computer{
+
+        width: 70%;
+    }
 }
 
 .text-section__button{

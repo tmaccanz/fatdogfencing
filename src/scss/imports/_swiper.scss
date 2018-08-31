@@ -170,9 +170,19 @@
     left: 15px;
     right: auto;
 
+    @include small-computer{
+
+      left: 10px;
+    }
+
+    @include tablet{
+
+      left: 7px;
+    }
+
     @include mobile{
 
-      left: 1px;
+      left: 0px;
     }
   }
   .swiper-button-next,
@@ -181,9 +191,19 @@
     right: 15px;
     left: auto;
 
+    @include small-computer{
+
+      right: 10px;
+    }
+
+    @include tablet{
+
+      right: 7px;
+    }
+
     @include mobile{
 
-      right: 1px;
+      right: 0px;
     }
   }
 

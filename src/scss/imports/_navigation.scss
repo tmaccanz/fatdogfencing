@@ -5,19 +5,17 @@
 nav{
 
     width: 100%;
-    height: 7vh;
-    max-width: 100%;
+    height: 7%;
     @include flex-row-center;
     position: fixed;
     z-index: 10000;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 
 .sticky{
 
     width: 100%;
-    max-width: 100%;
-    height: 7vh;
+    height: 7%;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background-color: $secondary-color;
 }
@@ -28,16 +26,6 @@ nav{
     height: auto;
     margin-right: auto;
     margin-left: 20px;
-
-    @include small-computer{
-
-        width: 10%;
-    }
-
-    @include mobile{
-
-        margin-left: 10px;
-    }
 }
 
 .nav__logo img{
@@ -55,7 +43,7 @@ nav{
 
     @include medium-computer{
 
-        margin-left: 4%;
+        margin-left: 0%;
     }
 
     @include small-computer{
@@ -73,7 +61,12 @@ nav{
 
     @include medium-computer{
 
-        margin: 0 0.8rem 0 0.8rem;
+        margin: 0 1rem 0 1rem;
+    }
+
+    @include small-computer{
+
+        display: none;
     }
 }
         
@@ -109,29 +102,6 @@ nav{
     @include flex-row-center;
     margin-left: auto;
     margin-right: 20px;
-
-    @include small-computer{
-
-        display: none;
-        width: 0;
-        height: 0;
-        margin: 0;
-    }
-
-    @include tablet{
-
-        display: none;
-    }       
-    
-    @include mobile{
-
-        display: none;
-    }
-
-    @include small-mobile{
-
-        display: none;
-    }
 }
 
 .phone-container__text{
@@ -140,32 +110,6 @@ nav{
     visibility: hidden;
     transform: translate3d(20%, 0, 0);
     text-decoration: none;
-
-    @include medium-computer{
-
-        margin-right: 0.8rem;
-    }
-
-    @include small-computer{
-
-        display: none;
-        margin: 0;
-    }
-
-    @include tablet{
-
-        display: none;
-    }       
-    
-    @include mobile{
-
-        display: none;
-    }
-
-    @include small-mobile{
-
-        display: none;
-    }
 }
 
 .phone-container__text--open{
@@ -185,124 +129,11 @@ nav{
     width: 2rem;
     height: 2rem;
     cursor: pointer;
-
-    @include small-computer{
-
-        display: none;
-        width: 0;
-        height: 0;
-    }
 }
 
 //Mobile Menu
 
-.mobile-menu{
 
-    visibility: hidden;
-    transform: translate3d(100%, 0, 0);
-
-    @include small-computer{
-
-        width: 100%;
-        height: 93%;
-        background: linear-gradient(135deg, #8ABDED ,#6093BF);
-        display: flex;
-        position: fixed;
-        flex-direction: column;
-        margin-top: 7vh;
-    }
-}
-
-.mobile-menu--open{
-
-    transform: translate3d(0, 0, 0);
-    transition: all 0.5s ease-in-out;
-    visibility: visible;
-}
-
-.mobile--sticky{
-
-    @include small-computer{
-
-        background: $secondary-color;
-    }
-}
-
-.nav__menu-mobile-icon{
-
-    display: none;
-
-    @include small-computer{
-
-        display: block;
-        visibility: visible;
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 10px;
-    }
-}
-
-.nav__menu-mobile-icon:hover{
-
-    @include small-computer{
-
-        cursor: pointer;
-    }
-}
-
-.mobile-menu__container{
-
-    @include small-computer{
-
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-}
-
-.mobile-menu__container a{
-
-    transition: 0.3s ease ease-in-out;
-
-    @include small-computer{
-
-        width: 100%;
-        height: calc(100%/7);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 1px solid $accent-color;
-    }
-}
-
-.mobile-menu__container a:nth-of-type(1){
-
-    border-top: 1px solid $accent-color;
-}
-
-.mobile-menu__container a:nth-of-type(7):hover{
-
-    background: linear-gradient(135deg, #8ABDED ,#6093BF);
-}
-
-.mobile-menu__container a:hover{
-
-    background-color: $primary-color;
-}
-
-.mobile-menu__link--number{
-
-    width: 80%;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 /* Footer
@@ -312,7 +143,7 @@ nav{
 footer{
 
     width: 100%;
-    height: 7vh;
+    height: 7%;
     background-color: $secondary-color;
     display: flex;
     justify-content: flex-end;
