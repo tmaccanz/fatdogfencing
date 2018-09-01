@@ -4,13 +4,18 @@
 .testimonial{
 
     width: 100%;
-    height: 93%;
+    height: 90%;
     @include flex-column-center;
     padding: 4rem 0 4rem 0;
 
+    @include medium-computer{
+
+        height: 110%
+    }
+
     @include small-computer{
 
-        height: 110%;
+        height: 120%;
     }
 
     @include tablet{
