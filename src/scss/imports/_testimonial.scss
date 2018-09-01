@@ -10,13 +10,13 @@
 
     @include medium-computer{
 
-        height: 110%;
+        height: 120%;
         padding: 2rem 0 2rem 0;
     }
 
     @include small-computer{
 
-        height: 120%;
+        height: 130%;
     }
 
     @include tablet{
