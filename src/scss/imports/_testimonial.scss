@@ -10,7 +10,8 @@
 
     @include medium-computer{
 
-        height: 110%
+        height: 110%;
+        padding: 2rem 0 2rem 0;
     }
 
     @include small-computer{
