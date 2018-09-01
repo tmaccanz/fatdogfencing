@@ -11,7 +11,15 @@ const mapsapi = require( 'google-maps-api' )( 'AIzaSyBMrBP0irD3XSwAUHbK5t8Mckz6K
 
 /* Sticky Menu
    ============================================================================= */
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 1) {
+        $('nav').addClass("sticky");
+    } else {
+        $('nav').removeClass("sticky");
+    }
+});
 
+/* 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
         $('.mobile-menu').addClass("mobile--sticky");
@@ -22,7 +30,7 @@ $(window).scroll(function () {
 
 /* mobile-menu
    ============================================================================= */
-   
+   /*
 $('.nav__menu-mobile-icon').click(function(e){
     $('.mobile-menu').toggleClass('mobile-menu--open');
 });
@@ -30,13 +38,6 @@ $('.mobile-menu__container a').click(function(e){
     $('.mobile-menu').toggleClass('mobile-menu--open');
 });
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 1) {
-        $('nav').addClass("sticky");
-    } else {
-        $('nav').removeClass("sticky");
-    }
-});
 
 /* Smooth-scroll
  ============================================================================= */
