@@ -41,11 +41,6 @@ nav{
     @include flex-row-center;
     margin-left: 5%;
 
-    @include medium-computer{
-
-        margin-left: 0%;
-    }
-
     @include small-computer{
 
         display: none;
@@ -61,7 +56,7 @@ nav{
 
     @include medium-computer{
 
-        margin: 0 1rem 0 1rem;
+        margin: 0 0.5rem 0 0.5rem;
     }
 
     @include small-computer{

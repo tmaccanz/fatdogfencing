@@ -121,6 +121,8 @@
     height: 3rem;
     pointer-events: bounding-box;
     cursor: pointer;
+    min-width: 50px;
+    min-height: 50px;
 
     @include tablet{
 

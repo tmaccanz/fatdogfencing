@@ -9,11 +9,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @include small-computer{
-
-        height: 80%;
-    }
 }
 
 .quote-container{
