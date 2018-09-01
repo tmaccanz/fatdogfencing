@@ -7,6 +7,11 @@
     height: 93%;
     display: flex;
 
+    @include medium-computer{
+
+        height: 115%;
+    }
+
     @include mobile{
 
         display: flex;

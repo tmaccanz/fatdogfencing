@@ -9,6 +9,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include medium-computer{
+
+        height: 105%;
+    }
 }
 
 .quote-container{

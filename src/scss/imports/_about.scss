@@ -7,9 +7,14 @@
     height: 70%;
     display: flex;
 
+    @include medium-computer{
+
+        height: 85%;
+    }
+
     @include small-computer{
 
-        height: 80%;
+        height: 90%;
     }
 
     @include tablet{
