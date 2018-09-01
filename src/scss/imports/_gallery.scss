@@ -71,6 +71,7 @@
     
         width: 100%;
         height: 30%;
+        min-height: 150px;
         z-index: 1;
         cursor: pointer;
         transition: ease 0.3s;
@@ -154,7 +155,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 50;
+    z-index: 9999;
     background: rgba(0, 0, 0, 0.7);
 }
   
@@ -164,7 +165,7 @@
     z-index: 1;
     top: 0px;
     right: 0px;
-    padding: 10vh 20px;
+    padding: 11vh 20px;
     cursor: pointer;
 }
 

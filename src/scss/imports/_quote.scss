@@ -14,6 +14,16 @@
 
         height: 120%;
     }
+
+    @include small-computer{
+
+        height: 105%;
+    }
+
+    @include mobile{
+
+        height: 85%;
+    }
 }
 
 .quote-container{
