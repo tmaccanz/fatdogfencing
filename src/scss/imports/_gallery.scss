@@ -145,13 +145,13 @@
 
     @include mobile{
 
-        width: 90%;
+        width: 80%;
         height: 45%;
     }
 
     @include small-mobile{
 
-        width: 90%;
+        width: 70%;
         height: 40%;
     }
 }
