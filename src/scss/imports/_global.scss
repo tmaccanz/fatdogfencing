@@ -12,8 +12,8 @@ $accent-color:#ffffff;
 $accent-color-dark: #000000;
 
 
-body{
-
+body, html{
+    max-width: 100vw;
     overflow-x: hidden;
 }  
 
