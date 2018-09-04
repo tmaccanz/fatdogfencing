@@ -11,6 +11,11 @@
 
         height: 90%;
     }
+
+    @include small-mobile{
+
+        height: 110%;
+    }
 }
 
 .service__header{
