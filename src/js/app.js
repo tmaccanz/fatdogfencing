@@ -16,19 +16,13 @@ const mapsapi = require( 'google-maps-api' )( 'AIzaSyBMrBP0irD3XSwAUHbK5t8Mckz6K
    $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
         $('nav').addClass("sticky");
-    } else {
-        $('nav').removeClass("sticky");
-    }
-});
-
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 1) {
         $('.mobile-menu').addClass("mobile--sticky");
     } else {
+        $('nav').removeClass("sticky");
         $('.mobile-menu').removeClass("mobile--sticky");
     }
 });
+
 
 /* mobile-menu
    ============================================================================= */
