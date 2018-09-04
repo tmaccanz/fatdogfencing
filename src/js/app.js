@@ -11,7 +11,7 @@ const mapsapi = require( 'google-maps-api' )( 'AIzaSyBMrBP0irD3XSwAUHbK5t8Mckz6K
 
 /* Sticky Menu
    ============================================================================= */
-/* 
+
 
    $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
@@ -32,7 +32,7 @@ $(window).scroll(function () {
 
 /* mobile-menu
    ============================================================================= */
-   /*
+   
 $('.nav__menu-mobile-icon').click(function(e){
     $('.mobile-menu').toggleClass('mobile-menu--open');
 });
