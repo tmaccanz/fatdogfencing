@@ -308,16 +308,10 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     );
 }
 
-progress{
-
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    background-color: #6BA543;
-  }
 
 input[type="range"]::-moz-range-progress {
     background-color: #6BA543;
+    border: 1px solid #6BA543;
   }
 
 [type='range']::-moz-range-thumb{
@@ -327,7 +321,7 @@ input[type="range"]::-moz-range-progress {
     cursor: pointer;
     height: 20px;
     width: 20px;
-    border-color: none;
+    border-color: $accent-color-dark;
 }
 
 [type='range']::-moz-range-thumb:hover{
