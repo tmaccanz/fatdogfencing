@@ -220,6 +220,7 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
 
     width: 100%;
     height: 5px;
+    min-height: 5px;
     outline: none;
     padding: 0;
     margin: 0;
@@ -249,6 +250,7 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     appearance: none;
     width: 100%;
     height: 5px;
+    min-height: 5px;
     background-color: $accent-color-dark;
     background-image: gradient(
         linear,
