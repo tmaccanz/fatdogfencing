@@ -15,7 +15,13 @@
    @include small-computer{
 
         background: $secondary-color;
+        height: 8vh;
    }
+
+   @include small-mobile{
+
+    height: 10vh;
+}
 
    
 }
@@ -222,7 +228,12 @@ footer{
 
     @include small-computer{
 
-        height: 8%;
+        height: 8vh;
+    }
+
+    @include small-mobile{
+
+        height: 10vh;
     }
 }
 
