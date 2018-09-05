@@ -310,9 +310,8 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
 
 input[type="range"]::-moz-range-progress {
     background-color: #6BA543;
-    outline-color: #6BA543; 
-    background-color: #6BA543;
-    color: #6BA543;
+    appearance: none;
+    border: none;
   }
 
 [type='range']::-moz-range-thumb{
