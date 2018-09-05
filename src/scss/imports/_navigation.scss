@@ -158,7 +158,11 @@
        display: flex;
        position: fixed;
        flex-direction: column;
-       margin-top: 7vh;
+       margin-top: 8vh;
+   }
+   @include small-mobile{
+
+    margin-top: 10vh;
    }
 }
 .mobile-menu--open{
