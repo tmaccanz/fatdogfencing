@@ -327,6 +327,7 @@ input[type="range"]::-moz-range-progress {
 [type='range']::-moz-range-thumb:hover{
 
     background: $primary-color;
+    border-color: $primary-color;
 }
 
 [type='range']::-ms-track{
