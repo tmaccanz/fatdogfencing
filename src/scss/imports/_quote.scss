@@ -24,6 +24,11 @@
 
         height: 85%;
     }
+
+    @include small-mobile{
+
+        height: 95%;
+    }
 }
 
 .quote-container{
