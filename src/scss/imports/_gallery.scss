@@ -24,6 +24,11 @@
 
             height: 450%;
         }
+
+        @include small-mobile{
+
+            height: 600%;
+        }
     }
     
     .gallery-container{

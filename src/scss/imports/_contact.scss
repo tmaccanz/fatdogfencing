@@ -18,6 +18,11 @@
         flex-direction: column-reverse;
         height: 210%;
     }
+
+    @include small-mobile{
+
+        height: 250%;
+    }
 }
 
 //map
