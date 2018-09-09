@@ -4,43 +4,58 @@
 .testimonial{
 
     width: 100%;
-    height: 90%;
+    height: 100vh;
     @include flex-column-center;
-    padding: 4rem 0 4rem 0;
+    padding: 2rem 0 4rem 0;
 
     @include medium-computer{
 
-        height: 120%;
+        height: 120vh;
         padding: 2rem 0 2rem 0;
     }
 
     @include small-computer{
 
-        height: 130%;
+        height: 130vh;
     }
 
     @include tablet{
 
-        height: 180%;
+        height: 180vh;
     }
 
     @include mobile{
 
-        height: 230%;
-        padding-bottom: 3rem;
+        height: 230vh;
+        padding: 0rem;
         margin: 0;
     }
 
     @include small-mobile{
 
-        height: 340%;
+        height: 340vh;
         padding-bottom: 3rem;
+    }
+}
+
+.testimonial__header{
+
+    @include mobile{
+
+        position: relative;
+        top: 4rem;
     }
 }
 
 .testimonial__sub-header{
 
     padding-bottom: 1rem;
+
+    @include mobile{
+
+        position: relative;
+        top: 4rem;
+    }
 }
 
 .testimonial-container{
@@ -58,7 +73,7 @@
         flex-direction: column;
 
     }
-  }
+}
 
 .testimonial-container__card{
 
@@ -68,13 +83,12 @@
     border: 15px solid $secondary-color;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     background-color: $secondary-color-light;
-    margin: 0 1rem 0 1rem;
+    margin: 1rem;
 
     @include tablet{
 
         width: 70%;
         height: 20%;
-        margin: 1rem 0 1rem 0;
     }
 
     @include small-mobile{

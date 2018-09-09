@@ -333,3 +333,12 @@ let mySwiper = new Swiper('.swiper-container', {
     }
   }   
   
+
+    /* Virtual keyboard input fix
+   ============================================================================= */
+
+   $(".feedback-input").focus(function(){
+         $(document.body).addClass('when-keyboard-showing');});
+
+   $(".feedback-input").blur( function(){  
+       $(document.body).removeClass('when-keyboard-showing');});

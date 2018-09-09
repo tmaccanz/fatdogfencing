@@ -4,30 +4,32 @@
    .quote{
 
     width: 100%;
-    height: 90%;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $primary-color-light;
 
     @include medium-computer{
 
-        height: 120%;
+        height: 120vh;
     }
 
     @include small-computer{
 
-        height: 105%;
+        height: 105vh;
     }
 
     @include mobile{
 
-        height: 85%;
+        height: auto;
+        padding: 5rem 0 5rem 0;
     }
 
     @include small-mobile{
 
-        height: 95%;
+
     }
 }
 
@@ -39,7 +41,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $primary-color-light;
 }
 
 .quote-container__top{

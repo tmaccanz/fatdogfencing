@@ -1,33 +1,33 @@
 /* Gallery
    ============================================================================= */
    
-   @supports (display: grid) {
+@supports (display: grid){
 
     .gallery{
 
         width: 100%;
-        height: 90%;
+        height: 120vh;
         @include flex-row-center;
-        padding: 4rem 0 4rem 0;
+        padding: 2rem 0 2rem 0;
 
         @include small-computer{
 
-            height: 120%;
+            height: 120vh;
+            padding: 8rem 0 8rem 0;
         }
 
         @include tablet{
 
-            height: 200%;
+            height: 200vh;
         }
 
         @include mobile{
 
-            height: 450%;
+            height: auto;
         }
 
         @include small-mobile{
 
-            height: 650%;
         }
     }
     
@@ -76,7 +76,7 @@
     
         width: 100%;
         height: 35%;
-        min-height: 180px;
+        min-height: 250px;
         z-index: 1;
         cursor: pointer;
         transition: ease 0.3s;
@@ -85,6 +85,7 @@
         @include small-computer{
 
             height: 20%;
+            min-height: 200px;
         }
 
         @include tablet{
@@ -270,6 +271,5 @@
             height:calc(90%/12);
             margin: 0;
         }
-
     } 
 }       

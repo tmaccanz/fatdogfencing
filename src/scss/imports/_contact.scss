@@ -4,24 +4,25 @@
 .contact{
 
     width: 100%;
-    height: 90%;
+    height: 90vh;
     display: flex;
 
     @include medium-computer{
 
-        height: 110%;
+        height: 110vh;
     }
 
     @include mobile{
 
         display: flex;
         flex-direction: column-reverse;
-        height: 200%;
+        height: auto;
     }
 
     @include small-mobile{
 
-        height: 300%;
+
+      
     }
 }
 
@@ -39,7 +40,7 @@
     @include mobile{
 
         width: 100%;
-        height: 50%;
+        height: 50vh;
     }
 }
 
