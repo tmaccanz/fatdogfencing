@@ -13,26 +13,10 @@
    @import 'imports/gallery';
    @import 'imports/quote';
    @import 'imports/contact';
+   @import 'imports/404';
 
 /* ============================================================================= */
 
-//Virtual keyboard fix
-
-@media only screen and (max-width: 768px) {
-    
-    body.when-keyboard-showing.contact{
-
-        height: 1500px;
-    }
-    body.when-keyboard-showing.quote{
-
-        height: 1500px;
-    }
-    body.when-keyboard-showing.gallery{
-
-        height: 1500px;
-    }
-}
 
 
 
