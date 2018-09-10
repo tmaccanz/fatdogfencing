@@ -342,9 +342,9 @@ $('.contact-form').submit(function(e) {
 
     setTimeout(function(){
         
-        $(".contact__form-success-modal").hide();
+        $(".contact__form-success-modal").addClass("form-success-modal__close");
 
-    }, 3000);
+    }, 5000);
 
 });
 
