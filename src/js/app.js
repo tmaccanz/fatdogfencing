@@ -335,9 +335,9 @@ let mySwiper = new Swiper('.swiper-container', {
   
   /* Form success modal
    ============================================================================= */
-setTimeout(function(){
     $('.contact-form').submit(function() {
 
+        $('.contact__form-success-modal').delay(3000);
         $('.contact__form-success-modal').addClass("form-success-modal__open");
 
         setTimeout(function(){
@@ -347,4 +347,4 @@ setTimeout(function(){
         }, 5000);
 
     });
-}, 5000);
+
