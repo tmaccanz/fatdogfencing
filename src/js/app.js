@@ -337,13 +337,14 @@ let mySwiper = new Swiper('.swiper-container', {
    ============================================================================= */
     $('.contact-form').submit(function() {
 
-        $('.contact__form-success-modal').delay(3000).addClass("form-success-modal__open");
-
         setTimeout(function(){
-            
-            $(".contact__form-success-modal").addClass("form-success-modal__close");
+            $('.contact__form-success-modal').addClass("form-success-modal__open");
 
+            setTimeout(function(){
+                
+                $(".contact__form-success-modal").addClass("form-success-modal__close");
+
+            }, 5000);
         }, 5000);
-
     });
 
