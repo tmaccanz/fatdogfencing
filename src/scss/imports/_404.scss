@@ -10,15 +10,12 @@
     align-items: center;
 }
 
-.not-found__logo{
-
-    margin-top: 0;
-}
 
 .not-found__logo img{
 
     width: 15rem;
-    height: 15rem;
+    height: auto;
+    margin-bottom: 2rem;
 }
 
 .not-found__header{
