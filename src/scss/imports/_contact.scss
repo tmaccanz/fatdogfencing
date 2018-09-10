@@ -26,6 +26,29 @@
     }
 }
 
+.contact__form-success-modal{
+
+    width: 25%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $accent-color;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 9999;
+    align-self: center;
+    left: 37.5%;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.form-success-modal__open{
+
+    visibility: visible;
+}
+
 //map
 
 .contact-map{

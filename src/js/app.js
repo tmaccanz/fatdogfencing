@@ -333,3 +333,27 @@ let mySwiper = new Swiper('.swiper-container', {
     }
   }   
   
+  /* Form success modal
+   ============================================================================= */
+
+$('.submit-form').click(function() {
+
+    function checkFormInputs() {
+        $('.feedback-input').each(function(){
+            if( $(this).val() == "" ){
+              
+                $('.contact__form-success-modal').addClass("form-success-modal__open");
+
+                setTimeout(function(){
+                    
+                    $(".contact__form-success-modal").hide();
+            
+                }, 3000);
+    
+              return false;
+            }
+        });
+    };
+});
+
+
