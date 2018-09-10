@@ -346,5 +346,5 @@ $('.contact-form').submit(function() {
 
     }, 5000);
 
-});
+}, 5000);
 
