@@ -18,12 +18,24 @@
 
 .not-found__header{
 
-    font-size: 5rem;
+    font-size: 10em;
+    margin: 0;
+
+    @include mobile{
+
+        font-size: 5em;
+    }
 }
 
 .not-found__sub-header{
 
-    font-size: 5rem;
+    font-size: 3em;
+    margin-top: 0;
+
+    @include mobile{
+
+        font-size: 2em;
+    }
 }
 
 .not-found__link h3:hover{
