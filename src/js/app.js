@@ -342,6 +342,11 @@ $('.submit-form').click(function() {
         $('.feedback-input').each(function(){
             if( $(this).val() == "" ){
               
+                
+    
+              return false;
+            }else{
+             
                 $('.contact__form-success-modal').addClass("form-success-modal__open");
 
                 setTimeout(function(){
@@ -349,8 +354,6 @@ $('.submit-form').click(function() {
                     $(".contact__form-success-modal").hide();
             
                 }, 3000);
-    
-              return false;
             }
         });
     };
