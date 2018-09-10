@@ -335,8 +335,7 @@ let mySwiper = new Swiper('.swiper-container', {
   
   /* Form success modal
    ============================================================================= */
-    $('.contact-form').on('setTimeout submit',function() {
-
+    $('.contact-form').submit(function() {
 
         $('.contact__form-success-modal').addClass("form-success-modal__open");
 
@@ -344,7 +343,7 @@ let mySwiper = new Swiper('.swiper-container', {
             
             $(".contact__form-success-modal").addClass("form-success-modal__close");
 
-        }, 5000);
+        }, 10000);
 
-    }, 5000);
+    });
 
