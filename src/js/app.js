@@ -335,7 +335,7 @@ let mySwiper = new Swiper('.swiper-container', {
   
   /* Form success modal
    ============================================================================= */
-    $('.contact-form').submit(function() {
+    $('.submit-form').submit(function() {
 
         $('.contact__form-success-modal').addClass("form-success-modal__open");
 
