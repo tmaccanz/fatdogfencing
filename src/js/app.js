@@ -336,27 +336,15 @@ let mySwiper = new Swiper('.swiper-container', {
   /* Form success modal
    ============================================================================= */
 
-$('.submit-form').click(function() {
+$('.contact-form').click(function(e) {
+    e.preventDefault();
+    $('.contact__form-success-modal').addClass("form-success-modal__open");
 
-    function checkFormInputs() {
-        $('.feedback-input').each(function(){
-            if( $(this).val() == "" ){
-              
-                
-    
-              return false;
-            }else{
-             
-                $('.contact__form-success-modal').addClass("form-success-modal__open");
+    setTimeout(function(){
+        
+        $(".contact__form-success-modal").hide();
 
-                setTimeout(function(){
-                    
-                    $(".contact__form-success-modal").hide();
-            
-                }, 3000);
-            }
-        });
-    };
+    }, 3000);
+
 });
-
 
