@@ -333,8 +333,8 @@ let mySwiper = new Swiper('.swiper-container', {
     }
   }   
   
-  $(".contact-form").submit(function(e) {
-    e.preventDefault();
+  $(".contact-form").submit(function() {
+    
   
     var $form = $(this);
     $.post($form.attr("action"), $form.serialize()).then(function() {
