@@ -339,7 +339,7 @@ let mySwiper = new Swiper('.swiper-container', {
     var $form = $(this);
     $.post($form.attr("action"), $form.serialize()).then(function() {
       $(".feedback-input").val('');
-      alert("Thank you!");
+      alert("Message Successfully Sent!");
     });
   });
 
