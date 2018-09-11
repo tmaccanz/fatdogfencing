@@ -26,44 +26,6 @@
     }
 }
 
-.contact__form-success-modal{
-
-    width: 25%;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: $primary-color;
-    border: 5px solid $accent-color-dark;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    z-index: 9999;
-    align-self: center;
-    left: 37.5%;
-    box-sizing: border-box;
-    visibility: hidden;
-    opacity: 0;
-    transform: translate3d(0, -40%, 0);
-}
-
-.form-success-modal__open{
-
-    visibility: visible;
-    transform: translate3d(0, 0, 0);
-    transition: ease 0.5s;
-    opacity: 1;
-    
-}
-
-.form-success-modal__close{
-
-    visibility: hidden;
-    opacity: 0;
-    transform: translate3d(0, 40%, 0);
-    transition: ease 0.5s;
-}
-
 //map
 
 .contact-map{
