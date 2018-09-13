@@ -151,7 +151,7 @@
 
     @include mobile{
 
-        width: 300px;
+        width: 350px;
         height: 300px;
     }
 
@@ -179,7 +179,7 @@
     z-index: 10;
     top: 0px;
     right: 0px;
-    padding: 10vh 20px;
+    padding: 11vh 20px;
     cursor: pointer;
 }
 
@@ -201,24 +201,24 @@
     .gallery{
 
         width: 100%;
-        height: 90%;
+        height: 100vh;
         @include flex-row-center;
-        padding: 4rem 0 4rem 0;
+        padding: 3rem 0 3rem 0;
 
         @include small-computer{
 
-            height: 120%;
+            height: 120vh;
         }
 
         @include tablet{
 
-            height: 200%;
+            height: 200vh;
         }
 
         @include mobile{
 
-            height: 450%;
-            padding: 0;
+            height: auto;
+            margin: 3rem 0 3rem 0;
         }
     }
     
@@ -246,7 +246,7 @@
     
         width: 17%;
         height: 17%;
-        min-height: 180px;
+        min-height: 250px;
         z-index: 1;
         cursor: pointer;
         transition: ease 0.3s;
@@ -270,7 +270,8 @@
 
             width: 80%;
             height:calc(90%/12);
-            margin: 0;
+            margin: 1rem 0 1rem 0;
         }
     } 
 }       
+

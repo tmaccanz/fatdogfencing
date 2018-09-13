@@ -194,13 +194,19 @@ nav{
         display: flex;
         position: fixed;
         flex-direction: column;
+        margin-top: 7vh;
+   }
+
+   @include small-computer{
+
         margin-top: 8vh;
    }
 
    @include small-mobile{
 
         margin-top: 10vh;
-   }
+   } 
+
 }
 
 .mobile-menu--open{
