@@ -6,12 +6,11 @@
     width: 100%;
     height: 100vh;
     @include flex-column-center;
-    padding: 2rem 0 4rem 0;
+    padding: 3rem 0 4rem 0;
 
     @include medium-computer{
 
         height: 120vh;
-        padding: 2rem 0 2rem 0;
     }
 
     @include small-computer{
@@ -26,9 +25,8 @@
 
     @include mobile{
 
-        height: 170vh;
-        padding: 0rem;
-        margin: 0;
+        height: 200vh;
+        padding: 0;
     }
 
     @include small-mobile{
@@ -91,7 +89,7 @@
         height: 20%;
     }
 
-    @include small-mobile{
+    @include mobile{
 
         width: 90%;
     }
