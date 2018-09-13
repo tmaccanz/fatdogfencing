@@ -331,7 +331,10 @@ let mySwiper = new Swiper('.swiper-container', {
   
   
     }
-  }   
+  }
+  
+/* Form success modal
+   ============================================================================= */
   
   $(".contact-form").submit(function(e) {
     e.preventDefault();
