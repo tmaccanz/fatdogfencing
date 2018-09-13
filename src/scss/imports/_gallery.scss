@@ -151,14 +151,14 @@
 
     @include mobile{
 
-        width: 250px;
-        height: 100px;
+        width: 300px;
+        height: 300px;
     }
 
     @include small-mobile{
 
-        width: 200px;
-        height: 100px;
+        width: 300px;
+        height: 300px;
     }
 }
   
