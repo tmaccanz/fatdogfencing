@@ -84,7 +84,6 @@ let mySwiper = new Swiper('.swiper-container', {
 
 });
 
-
 /* Gallery
    ============================================================================= */
 
@@ -138,7 +137,6 @@ let mySwiper = new Swiper('.swiper-container', {
        //2. toggle the 'closed' class on the modal overlay.
        modalOverlay.classList.toggle('gallery-modal--closed');
        }
-
 
 
    /* Quote
@@ -250,7 +248,6 @@ let mySwiper = new Swiper('.swiper-container', {
   })
 
   
-   
   /* Map api
    ============================================================================= */
   

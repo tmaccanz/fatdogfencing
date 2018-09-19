@@ -38,21 +38,21 @@ svg:hover .icon--hover-secondary{
     color: $accent-color;
 }
 
-@mixin background {
+@mixin background{
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-@mixin flex-row-center {
+@mixin flex-row-center{
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin flex-column-center {
+@mixin flex-column-center{
 
     display: flex;
     flex-direction: column;
