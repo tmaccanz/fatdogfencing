@@ -1,12 +1,12 @@
 {
-  "name": "template_single_page",
+  "name": "fatdog_fencing",
   "version": "1.0.0",
-  "description": "Single page static template for Todd McAlinden",
+  "description": "Static site for Fatdog Fencing",
   "repository": {
     "type": "git",
     "url": ""
   },
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "hugo": "gulp hugo",
     "build": "gulp build",
