@@ -327,3 +327,4 @@ function submitForm(e) {
 }
 
 document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
