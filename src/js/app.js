@@ -182,7 +182,11 @@ function quote() {
 			dropdownContainer.style.display = "none";
 		}
 
-		dropdownItem.addEventListener("click", selectItem);
+    dropdownItem.addEventListener("click", selectItem);
+    
+    dropdownItemType.addEventListener("click", function(e) {
+      e.preventDefault();
+    });
 	}
 
 	dropdown();
