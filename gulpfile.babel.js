@@ -17,8 +17,7 @@ import imagemin from "gulp-imagemin";
 import imageminJPG from "imagemin-jpeg-recompress"
 import imageminPngquant from "imagemin-pngquant";
 import del from "del";
-import cache from 'gulp-cache';
-
+import cache from "gulp-cache";
 
 const browserSync = BrowserSync.create();
 

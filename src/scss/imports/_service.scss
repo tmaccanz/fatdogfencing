@@ -137,30 +137,81 @@
 
 .timber-image{
 
-    background-image: url(../images/timber_fence_retaining.jpg);
+    background-image: url(../images/timber_fence_retaining_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/timber_fence_retaining_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/timber_fence_retaining_mobile.jpg);
+    }
 }
 
 .coloursteel-image{
 
-    background-image: url(../images/colourbond_fence.jpg);
+    background-image: url(../images/colourbond_fence_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/colourbond_fence_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/colourbond_fence_mobile.jpg);
+    }
 }
 
 .decking-image{
 
-    background-image: url(../images/timber_deck.jpg);
+    background-image: url(../images/timber_deck_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/timber_deck_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/timber_deck_mobile.jpg);
+    }
 }
 
 .aluminium-image{
 
-    background-image: url(../images/pool_fencing.jpg);
+    background-image: url(../images/pool_fencing_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/pool_fencing_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/pool_fencing_mobile.jpg);
+    }
 }
 
 .retaining-image{
 
-    background-image: url(../images/timber_retaining.jpg);
+    background-image: url(../images/timber_retaining_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/timber_retaining_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/timber_retaining_mobile.jpg);
+    }
 }
+

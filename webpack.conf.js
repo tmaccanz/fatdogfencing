@@ -35,10 +35,19 @@ export default {
 
   context: path.join(__dirname, "src"),
   entry: {
-    app: ["./js/app"]
+    app: ["./js/app"],
+    sticky: ['./js/sticky.js'],
+    smoothscroll: ['./js/smoothscroll.js'],
+    mobilemenu: ['./js/mobilemenu.js'],
+    navigationphone: ['./js/navigationphone.js'],
+    swiper: ['./js/swiper.js'],
+    gallery: ['./js/gallery.js'],
+    quote: ['./js/quote.js'],
+    map: ['./js/map.js'],
+    form: ['./js/form.js'],
   },
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "dist/js/"),
     publicPath: "/",
     filename: "[name].js"
   },

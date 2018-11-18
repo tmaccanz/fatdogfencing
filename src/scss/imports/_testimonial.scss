@@ -153,24 +153,65 @@
 
 .card__card-1 > .card__card-back{
 
-    background-image: url(../images/timber_standard4.jpg);
+    background-image: url(../images/timber_standard4_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/timber_standard4_tablet.jpg); 
+    }
+
+    @include mobile{
+
+        background-image: url(../images/timber_standard4_mobile.jpg);
+    }
 }
 
 .card__card-2 > .card__card-back{
 
-    background-image: url(../images/colourbond_fence.jpg);
+    background-image: url(../images/colourbond_fence_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/colourbond_fence_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/colourbond_fence_mobile.jpg);
+    }
 }
 
 .card__card-3 > .card__card-back{
 
-    background-image: url(../images/timber_deck.jpg);
+    background-image: url(../images/timber_deck_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/timber_deck_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/timber_deck_mobile.jpg);
+    }
 }
 
 .card__card-4 > .card__card-back{
 
-    background-image: url(../images/timber_standard3.jpg);
+    background-image: url(../images/timber_standard3_src.jpg);
     @include background;
+
+    @include tablet{
+
+        background-image: url(../images/timber_standard3_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/timber_standard3_mobile.jpg);
+    }
 }
+

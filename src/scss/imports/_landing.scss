@@ -12,8 +12,38 @@
     width: 100%;
     height: 100%;
     @include flex-column-center;
-    background-image: url(../images/landing_hero_background.jpg);
+    background-image: url(../images/landing_hero_background_src.jpg);
     @include background;
+
+    @include widescreen-computer{
+
+        background-image: url(../images/landing_hero_background_widescreen-computer.jpg);
+    }
+
+    @include large-computer{
+
+        background-image: url(../images/landing_hero_background_large-computer.jpg);
+    }
+
+    @include medium-computer{
+
+        background-image: url(../images/landing_hero_background_medium-computer.jpg);
+    }
+
+    @include small-computer{
+
+        background-image: url(../images/landing_hero_background_small-computer.jpg);
+    }
+
+    @include tablet{
+
+        background-image: url(../images/landing_hero_background_tablet.jpg);
+    }
+
+    @include mobile{
+
+        background-image: url(../images/landing_hero_background_mobile.jpg);
+    }
 }
 
 .landing__text-section{
