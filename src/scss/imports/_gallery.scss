@@ -10,6 +10,11 @@
         @include flex-row-center;
         padding: 3rem 0 3rem 0;
 
+        @include medium-computer{
+
+            height: 130vh
+        }
+
         @include small-computer{
 
             height: 140vh;
@@ -30,7 +35,7 @@
     .gallery-container{
     
         width: 90%;
-        height: aut0;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;

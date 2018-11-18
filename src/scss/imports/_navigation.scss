@@ -34,8 +34,7 @@ nav{
     background-color: $secondary-color;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
-    @include small-computer{
-
+    @include medium-computer{
         height: 8vh;
     }
 
@@ -90,6 +89,11 @@ nav{
     text-decoration: none;
 
     @include medium-computer{
+
+        margin: 0 1rem 0 1rem;
+    }
+
+    @include small-computer{
 
         margin: 0 0.8rem 0 0.8rem;
     }
@@ -303,8 +307,7 @@ footer{
     align-items: center;
     position: relative;
 
-    @include small-computer{
-
+    @include medium-computer{
         height: 8vh;
     }
 
@@ -317,7 +320,6 @@ footer{
 .footer__arrow-container{
 
     margin: auto;
-
 }
 
 .up-arrow{
