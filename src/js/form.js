@@ -2,7 +2,7 @@ import $ from "jquery";
 
 function submitForm(e) {
 	e.preventDefault();
-	const $form = this;
+	const $form = $(this);
 
 	$.post($form.attr("action"), $form.serialize()).then(function() {
 		$("feedback-input").val("");
