@@ -6,18 +6,18 @@
     .gallery{
 
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         @include flex-row-center;
         padding: 3rem 0 3rem 0;
 
         @include medium-computer{
 
-            height: 120vh;
+            height: 140vh;
         }
 
         @include small-computer{
 
-            height: 140vh;
+            height: 160vh;
         }
 
         @include tablet{

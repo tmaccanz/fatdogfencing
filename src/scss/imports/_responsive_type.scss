@@ -73,7 +73,7 @@ $max_font: 22px;
 html {
     
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
-    font-family: 'Raleway-Medium';
+    font-family: 'Roboto-medium';
     color: $accent-color;
     letter-spacing: 0.1em;
 
@@ -104,14 +104,14 @@ h3, .font--header-product-dark{
 
 .font--header-poppins{
     
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Poppins', sans-serif;
   color: $accent-color;
   letter-spacing: 0.15em;
 }
 
 .font--header-poppins-dark{
     
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Poppins', sans-serif;
   color: $accent-color-dark;
   letter-spacing: 0.15em;
 }
