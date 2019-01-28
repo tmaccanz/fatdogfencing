@@ -31,7 +31,12 @@
 
     @include small-mobile{
 
-        height: 165vh;
+        height: 130vh;
+    }
+
+    @include extra-small-mobile{
+
+        height: 155vh;
     }
 }
 
