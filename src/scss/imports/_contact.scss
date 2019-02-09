@@ -98,6 +98,15 @@
     outline: 0;
 }
 
+.recpatcha-input{
+
+    background-color: transparent;
+    border: none;
+    margin-bottom: 3rem;
+    padding-bottom: 10px;
+    outline: 0;
+}
+
 ::placeholder { 
     color: $accent-color-dark;
     opacity: 1;
