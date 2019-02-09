@@ -1,13 +1,16 @@
 import Swiper from "swiper";
 
-const mySwiper = new Swiper(".swiper-container", {
+export default function swiperModule() {
 
-    direction: "horizontal",
-    loop: true,
-    simulateTouch:false,
-  
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  const mySwiper = new Swiper(".swiper-container", {
+
+      direction: "horizontal",
+      loop: true,
+      simulateTouch:false,
+    
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+};

@@ -4,7 +4,7 @@
 nav{
 
     width: 100%;
-    height: 7vh;
+    height: auto;
     max-width: 100vw;
     position: fixed;
     margin-right: auto;
@@ -12,40 +12,32 @@ nav{
     position: fixed;
     z-index: 10000;
     transition: all ease-in-out 0.5s;
-
-    @include medium-computer{
-
-        height: 8.5vh
-    }
+    padding: 1rem 0;
 
     @include small-computer{
 
         background: $secondary-color;
-        height: 9vh;
+        height: 8%;
+        padding: 0;
+
     }
-
-    @include small-mobile{
-
-        height: 10vh;
-    } 
 }
 
 .sticky{
 
     width: 100%;
-    height: 7vh;
+    height: auto;
     max-width: 100vw;
     margin-right: auto;
     background-color: $secondary-color;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 0.8rem 0;
 
-    @include medium-computer{
-        height: 8vh;
-    }
+    @include small-computer{
 
-    @include small-mobile{
-
-        height: 10vh;
+        background: $secondary-color;
+        height: 8%;
+        padding: 0;
     }
 }
 
@@ -65,19 +57,19 @@ nav{
 .nav__logo img{
 
     width: 7rem;
-    height: 7rem;
+    height: auto;
 }
 
 .nav__link-container{
 
     width: auto;
     height: auto;
-    margin-left: 5%;
+    margin: 0;
     @include flex-row-center;
+    align-self: center;
 
     @include medium-computer{
 
-        margin-left: 4%;
     }
 
     @include small-computer{
@@ -193,26 +185,22 @@ nav{
 
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
+    padding: 0;
 
     @include small-computer{
 
         width: 100%;
-        height: 93vh;
+        height: 92%;
         background: $secondary-color;
         display: flex;
         position: fixed;
         flex-direction: column;
-        margin-top: 7vh;
-   }
-
-   @include small-computer{
-
-        margin-top: 8vh;
+        justify-content: flex-end;
+        bottom: 0;
    }
 
    @include small-mobile{
 
-        margin-top: 10vh;
    } 
 }
 
@@ -305,22 +293,13 @@ nav{
 footer{
 
     width: 100%;
-    height: 7vh;
+    height: auto;
     background-color: $secondary-color;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-
-    @include medium-computer{
-        
-        height: 8vh;
-    }
-
-    @include small-mobile{
-
-        height: 10vh;
-    }
+    padding: 1rem 0 1rem 0;
 }
 
 .footer__arrow-container{
@@ -331,7 +310,7 @@ footer{
 .up-arrow{
 
     width: 2rem;
-    height: 2rem;
+    height: auto;
 }
 
 .footer__facebook-container{
@@ -345,6 +324,6 @@ footer{
 .footer-facebook{
 
     width: 2rem;
-    height: 2rem;
+    height: auto;
     margin-right: 1rem;
 }

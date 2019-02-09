@@ -1,12 +1,16 @@
 import $ from "jquery";
 
-function submitForm(e) {
-	e.preventDefault();
-	const $form = $(this);
+export default function formModule (){
 
-	$.post($form.attr("action"), $form.serialize()).then(function() {
-		$(".feedback-input").val("");
-	});
-}
+	function submitForm(e) {
+		e.preventDefault();
+		const $form = $(this);
 
-document.querySelector(".contact-form").addEventListener("submit", submitForm);
+		$.post($form.attr("action"), $form.serialize()).then(function() {
+			$(".feedback-input").val("");
+		});
+	}
+
+	document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+};

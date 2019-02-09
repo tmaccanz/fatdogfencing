@@ -5,24 +5,29 @@
 
     width: 100%;
     height: 70vh;
-    @include flex-column-center;
+    display: flex;
 
-    @include mobile{
+    @include medium-computer{
 
         height: 80vh;
     }
 
-    @include small-mobile{
+    @include small-computer{
 
-        height: 120vh;
+        height: 90vh;
     }
-}
 
-.service__header{
+    @include tablet{
 
-    position: relative;
-    bottom: 3.5rem;
-    margin: 0;
+       display: flex;
+       flex-direction: column; 
+    }
+
+    @include extra-small-mobile{
+
+        height: 130vh;
+    }
+
 }
 
 .service-container{
@@ -36,7 +41,7 @@
 
     display: flex;
 
-    @include mobile{
+    @include tablet{
 
         display: flex;
         flex-direction: column;
@@ -49,7 +54,7 @@
     height: 100%;
     @include flex-column-center;
 
-    @include mobile{
+    @include tablet{
 
         width: 100%;
         height: 50%;
@@ -59,7 +64,7 @@
 .service-text__container{
 
     width: 60%;
-    height: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +74,11 @@
 
         width: 70%;
     }
+}
+
+.service-text__container li p{
+
+    margin-top: 1rem;
 }
 
 .service-text__header-container{
@@ -96,7 +106,7 @@
     border: 15px solid $primary-color; 
     border-left: 0px;
 
-    @include mobile{
+    @include tablet{
 
         width: 100%;
         height: 50%;
@@ -215,3 +225,81 @@
     }
 }
 
+
+
+
+
+.gallery{
+
+    width: 100%;
+    padding: 5rem 0; 
+    @include flex-row-center;
+
+
+    @include small-computer{
+
+
+    }
+
+    @include tablet{
+
+
+    }
+
+    @include mobile{
+
+        height: auto;
+
+    }
+}
+
+.gallery-container{
+
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__image-grid{
+
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.card__img{
+
+    width: 20%;
+    height: auto;
+    z-index: 1;
+    cursor: pointer;
+    transition: ease 0.3s;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    margin: 1rem 1rem 1rem 1rem;
+
+    @include medium-computer{
+
+        width: calc(80%/3);
+    }
+
+    @include tablet{
+
+        width: calc(80%/2);
+    }
+
+    @include mobile{
+
+        width: 70%;
+    }
+
+    @include small-mobile{
+
+        width: 90%;
+    }
+} 

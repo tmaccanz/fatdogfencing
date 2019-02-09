@@ -4,27 +4,24 @@
    .quote{
 
     width: 100%;
-    height: 95vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $primary-color-light;
+    padding: 5rem 0;
 
     @include medium-computer{
 
-        height: 120vh;
     }
 
     @include small-computer{
 
-        height: 105vh;
     }
 
     @include mobile{
 
-        height: auto;
-        padding: 5rem 0 5rem 0;
     }
 }
 
@@ -46,6 +43,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.quote-container__top h2{
+
+    padding-bottom: 1rem;
 }
 
 .quote-dropdown{
@@ -192,7 +194,11 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+}
+
+.quote-container__middle h3{
+
+    padding: 5rem 0 1rem 0;
 }
 
 .quote-slider__container{
@@ -241,9 +247,9 @@ ul li .quote-dropdown__item-container li:nth-of-type(1) .quote-dropdown__item {
     color: $accent-color-dark;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
     box-sizing: border-box;
     border: 5px solid $accent-color-dark;
+    margin-top: 1rem;
 
     @include small-computer{
 
@@ -361,6 +367,11 @@ input[type="range"]::-moz-range-progress {
     height: 20px;
     width: 20px;
     margin-top: 0;
+}
+
+.quote__header-amount{
+
+    padding: 2rem 0 1rem 0;
 }
 
 .quote-container__bottom {

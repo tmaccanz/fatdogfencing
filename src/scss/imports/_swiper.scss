@@ -153,7 +153,7 @@
     z-index: 10;
     cursor: pointer;
 
-    @include mobile{
+    @include tablet{
 
       top: 25%;
     }

@@ -102,6 +102,11 @@ h3, .font--header-product-dark{
   @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
 }
 
+p{
+
+  line-height: 1.5;
+}
+
 .font--header-poppins{
     
   font-family: 'Poppins', sans-serif;
@@ -149,4 +154,10 @@ p, .font--body-roboto{
   font-family: 'Product Sans Regular';
   color: $accent-color-dark;
   letter-spacing: 0.1em;
+}
+
+.landing__text-section h1{
+
+
+  font-family: 'Poppins', sans-serif;
 }

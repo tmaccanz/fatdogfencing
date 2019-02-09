@@ -9,7 +9,7 @@
 
     @include medium-computer{
 
-        height: 85vh;
+        height: 80vh;
     }
 
     @include small-computer{
@@ -19,24 +19,19 @@
 
     @include tablet{
 
-       height: 100vh; 
        display: flex;
        flex-direction: column; 
+       height: 110vh;
     }
 
     @include mobile{
 
-        height: 110vh;
-    }
-
-    @include small-mobile{
-
-        height: 130vh;
+        height: 120vh;
     }
 
     @include extra-small-mobile{
 
-        height: 155vh;
+        height: 170vh;
     }
 }
 
@@ -108,7 +103,7 @@
 .about__text-section-container{
 
     width: 60%;
-    height: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,14 +115,14 @@
     }
 }
 
+.about__text__body--top{
+
+    margin-top: 1rem;
+}
+
 .text-section-container__text-header-container{
 
     margin-bottom: 1rem;
-}
-
-.text-header-container__header{
-
-    margin-bottom: 0;
 }
 
 .text-header-container__header--sub{

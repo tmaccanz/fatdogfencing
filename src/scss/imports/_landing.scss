@@ -58,6 +58,16 @@
 
         width: 70%;
     }
+
+    @include mobile{
+
+        width: 95%;
+    }
+}
+
+.landing__text-section h1{
+
+    padding-bottom: 2rem;
 }
 
 .text-section__button{
