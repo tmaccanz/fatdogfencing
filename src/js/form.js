@@ -6,7 +6,6 @@ function submitForm(e) {
 
 	$.post($form.attr("action"), $form.serialize()).then(function() {
 		$("feedback-input").val("");
-		alert("Message Successfully Sent!");
 	});
 }
 
