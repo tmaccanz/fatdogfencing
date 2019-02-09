@@ -5,7 +5,7 @@ function submitForm(e) {
 	const $form = $(this);
 
 	$.post($form.attr("action"), $form.serialize()).then(function() {
-		$("feedback-input").val("");
+		$(".feedback-input").val("");
 	});
 }
 
