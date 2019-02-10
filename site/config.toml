@@ -1,7 +1,7 @@
-baseurl = "/"
+baseurl = "https://www.fatdogfencing.co.nz/"
 languageCode = "en-nz"
 languageLang = "en"
-title = "Fatdog Fencing"
+title = "Fencing Contractors Tauranga, Bay of Plenty: Timber Fencing, Retaining Walls, Pool Fencing, Decking"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
