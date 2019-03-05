@@ -91,17 +91,9 @@
     align-self: flex-end;  
 }
 
-.contact-form{
-
-    width: 65%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
 form{
 
-    width: 65%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -114,7 +106,6 @@ form{
 
 .feedback-input{
 
-    width: 50%;
     background-color: transparent;
     border: none;
     border-bottom: 3px solid $accent-color-dark;
