@@ -19,7 +19,7 @@ export default function formModule (){
 	})
 		.then(res => {
 			if (res) {
-					alert("Thank you! Todd will be in touch shortly clarify any details.")
+					alert("Thank you! Daniel will be in touch shortly.")
 					$(".feedback-input").val("");
 			}
 		});
