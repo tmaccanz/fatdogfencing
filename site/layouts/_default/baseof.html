@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
     <title>{{ $.Site.Title }}</title>
-    <meta name="description" content="Fencing tradesman based in Bay of Plenty, Tauranga New Zealand. Servicing timber fencing, retaining walls, colourbond fencing, decking and gates." />
+    <meta name="description" content="Fencing contractor based in Bay of Plenty, Tauranga New Zealand. Servicing timber fencing, retaining walls, colourbond fencing, decking and gates." />
     <meta name="author" content="Todd McAlinden" />
 
     <!-- Favicon + Apple Touch -->

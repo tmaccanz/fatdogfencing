@@ -69,6 +69,14 @@
     }
 }
 
+#contact-form-item{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form__container h2{
 
     padding-bottom: 2rem;
@@ -86,6 +94,14 @@
 .contact-form{
 
     width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
