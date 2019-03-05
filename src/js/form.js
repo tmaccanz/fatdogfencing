@@ -4,7 +4,7 @@ export default function formModule (){
 
 
 
-	let testForm = document.querySelector("#contact-form-item form");
+	let testForm = document.querySelector(".form-item__select");
       
 	testForm.addEventListener('submit', e => {
 	e.preventDefault();
